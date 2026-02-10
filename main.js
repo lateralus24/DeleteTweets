@@ -1,14 +1,14 @@
-var authorization = "Bearer ***"; // replace by authorization value
+var authorization = "Bearer AAAAAAAAAAAAAAAAAAAAANRILgAAAAAAnNwIzUejRCOuH5E6I8xnZz4puTs%3D1Zv7ttfk8LF81IUq16cHjhLTvJu4FA33AGWWjCpTnA"; // replace by authorization value
 var ua = navigator.userAgentData.brands.map(brand => `"${brand.brand}";v="${brand.version}"`).join(', ');
-var client_tid = "***"; // replace by X-Client-Transaction-Id value
-var client_uuid = "***"; // replace by X-Client-Uuid value
+var client_tid = "Jv2JeftTF8k2E/mHAtSoSoc2WJ6lrQDaE3Rpxa7QtcwwVLJiuPpfz6HVW74W4+Ji0hcAHSNaYTqgfBsC6l0DeCEZu8x8JQ"; // replace by X-Client-Transaction-Id value
+var client_uuid = "b7d8b2f7a171766e7e8c4599e6040d2ee61cfd2884abfefab220c70f523bf961a1555f3ab1c35d0b134cf8c7af81cb2c1e6ee6209d82fd5712112bea4e773d141d38de01e777872fc9154cb233e646da"; // replace by X-Client-Uuid value
 var csrf_token = getCookie("ct0");
 var random_resource = "uYU5M2i12UhDvDTzN6hZPg";
 var random_resource_old_tweets = "H8OOoI-5ZE4NxgRr8lfyWg"
 var language_code = navigator.language.split("-")[0]
 var tweets_to_delete = []
 var user_id = getCookie("twid").substring(4);
-var username = "YourUsernameHere" // replace with your username
+var username = "rx_queen" // replace with your username
 var stop_signal = undefined
 var twitter_archive_content = undefined
 var twitter_archive_loading_confirmed = false
@@ -61,7 +61,7 @@ var delete_options = {
 		You would set after_date to 2023-03-18 (effectively 6 months ago) and before_date 2023-09-20 (tomorrow's date. So it deletes tweets from today too) 
 	*/
 	"after_date":new Date('1900-01-01'), // year-month-day
-	"before_date":new Date('2100-01-01') // year-month-day
+	"before_date":new Date('2025-01-01') // year-month-day
 }
 
 function buildAcceptLanguageString() {
